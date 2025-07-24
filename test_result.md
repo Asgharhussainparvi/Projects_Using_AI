@@ -249,11 +249,11 @@ metadata:
 
 test_plan:
   current_focus:
-    - "Create mood entry API endpoint"
-    - "Get mood entries API endpoint"
-    - "CSV export functionality"
     - "Mood entry form with emoji selection"
     - "Mood history display"
+    - "Calendar view for mood entries"
+    - "CSV export button functionality"
+    - "Navigation between views"
   stuck_tasks: []
   test_all: true
   test_priority: "high_first"
