@@ -167,15 +167,18 @@ backend:
           
   - task: "Delete mood entry API endpoint"
     implemented: true
-    working: "NA"
+    working: true
     file: "/app/backend/server.py"
     stuck_count: 0
     priority: "medium"
-    needs_retesting: true
+    needs_retesting: false
     status_history:
         - working: "NA"
           agent: "main"
           comment: "Implemented DELETE /api/moods/{mood_id} endpoint for removing mood entries"
+        - working: true
+          agent: "testing"
+          comment: "✅ PASSED - Tested DELETE /api/moods/{mood_id} endpoint successfully. Correctly deletes existing mood entries and returns success message, properly handles non-existent mood IDs with 404 status code and appropriate error message, accepts UUID format mood IDs as expected."
 
 frontend:
   - task: "Mood entry form with emoji selection"
